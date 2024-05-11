@@ -7,7 +7,7 @@ use MongoDB\Driver\Exception\InvalidArgumentException;
 /**
  * The MongoDB\Driver\Command class is a value object that represents a database command.
  * To provide "Command Helpers" the MongoDB\Driver\Command object should be composed.
- * @link https://php.net/manual/en/class.mongodb-driver-command.php
+ * @link https://php.net/manual/zh/class.mongodb-driver-command.php
  * @since 1.0.0
  */
 final class Command

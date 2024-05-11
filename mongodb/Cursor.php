@@ -6,14 +6,14 @@ use MongoDB\Driver\Exception\InvalidArgumentException;
 
 /**
  * The MongoDB\Driver\Cursor class encapsulates the results of a MongoDB command or query and may be returned by MongoDB\Driver\Manager::executeCommand() or MongoDB\Driver\Manager::executeQuery(), respectively.
- * @link https://php.net/manual/en/class.mongodb-driver-cursor.php
+ * @link https://php.net/manual/zh/class.mongodb-driver-cursor.php
  */
 final class Cursor implements CursorInterface, \Iterator
 {
     /**
      * Create a new Cursor
      * MongoDB\Driver\Cursor objects are returned as the result of an executed command or query and cannot be constructed directly.
-     * @link https://php.net/manual/en/mongodb-driver-cursor.construct.php
+     * @link https://php.net/manual/zh/mongodb-driver-cursor.construct.php
      */
     final private function __construct() {}
 
@@ -27,21 +27,21 @@ final class Cursor implements CursorInterface, \Iterator
 
     /**
      * Returns the MongoDB\Driver\CursorId associated with this cursor. A cursor ID cursor uniquely identifies the cursor on the server.
-     * @link https://php.net/manual/en/mongodb-driver-cursor.getid.php
+     * @link https://php.net/manual/zh/mongodb-driver-cursor.getid.php
      * @throws InvalidArgumentException on argument parsing errors.
      */
     final public function getId(): CursorId {}
 
     /**
      * Returns the MongoDB\Driver\Server associated with this cursor. This is the server that executed the query or command.
-     * @link https://php.net/manual/en/mongodb-driver-cursor.getserver.php
+     * @link https://php.net/manual/zh/mongodb-driver-cursor.getserver.php
      * @throws InvalidArgumentException on argument parsing errors.
      */
     final public function getServer(): Server {}
 
     /**
      * Checks if a cursor is still alive
-     * @link https://php.net/manual/en/mongodb-driver-cursor.isdead.php
+     * @link https://php.net/manual/zh/mongodb-driver-cursor.isdead.php
      * @return bool
      * @throws InvalidArgumentException On argument parsing errors
      */
@@ -75,7 +75,7 @@ final class Cursor implements CursorInterface, \Iterator
     /**
      * Sets a type map to use for BSON unserialization
      *
-     * @link https://php.net/manual/en/mongodb-driver-cursor.settypemap.php
+     * @link https://php.net/manual/zh/mongodb-driver-cursor.settypemap.php
      *
      * @throws InvalidArgumentException On argument parsing errors or if a class in the type map cannot
      * be instantiated or does not implement MongoDB\BSON\Unserializable
@@ -84,7 +84,7 @@ final class Cursor implements CursorInterface, \Iterator
 
     /**
      * Returns an array of all result documents for this cursor
-     * @link https://php.net/manual/en/mongodb-driver-cursor.toarray.php
+     * @link https://php.net/manual/zh/mongodb-driver-cursor.toarray.php
      * @throws InvalidArgumentException On argument parsing errors
      */
     final public function toArray(): array {}

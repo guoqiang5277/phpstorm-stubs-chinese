@@ -8,7 +8,7 @@ use MongoDB\Driver\Exception\UnexpectedValueException;
 
 /**
  * Class Binary
- * @link https://php.net/manual/en/class.mongodb-bson-binary.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-binary.php
  */
 final class Binary implements Type, BinaryInterface, \Serializable, JsonSerializable
 {
@@ -32,19 +32,19 @@ final class Binary implements Type, BinaryInterface, \Serializable, JsonSerializ
 
     /**
      * Binary constructor.
-     * @link https://php.net/manual/en/mongodb-bson-binary.construct.php
+     * @link https://php.net/manual/zh/mongodb-bson-binary.construct.php
      */
     final public function __construct(string $data, int $type = Binary::TYPE_GENERIC) {}
 
     /**
      * Returns the Binary's data
-     * @link https://php.net/manual/en/mongodb-bson-binary.getdata.php
+     * @link https://php.net/manual/zh/mongodb-bson-binary.getdata.php
      */
     final public function getData(): string {}
 
     /**
      * Returns the Binary's type
-     * @link https://php.net/manual/en/mongodb-bson-binary.gettype.php
+     * @link https://php.net/manual/zh/mongodb-bson-binary.gettype.php
      */
     final public function getType(): int {}
 

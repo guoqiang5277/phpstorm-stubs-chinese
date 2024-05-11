@@ -19,7 +19,7 @@ define("ARRAY_FILTER_USE_KEY", 2);
 
 /**
  * Merge two or more arrays recursively
- * @link https://php.net/manual/en/function.array-merge-recursive.php
+ * @link https://php.net/manual/zh/function.array-merge-recursive.php
  * @param array ...$arrays Variable list of arrays to recursively merge.
  * @return array An array of values resulted from merging the arguments together.
  */
@@ -37,7 +37,7 @@ function array_merge_recursive(
  * If a key only exists in the first array, it will be left as is. If several arrays are passed for replacement,
  * they will be processed in order, the later arrays overwriting the previous values.
  * array_replace() is not recursive : it will replace values in the first array by whatever type is in the second array.
- * @link https://php.net/manual/en/function.array-replace.php
+ * @link https://php.net/manual/zh/function.array-replace.php
  * @param array $array <p>
  * The array in which elements are replaced.
  * </p>
@@ -55,7 +55,7 @@ function array_replace(
 
 /**
  * Replaces elements from passed arrays into the first array recursively
- * @link https://php.net/manual/en/function.array-replace-recursive.php
+ * @link https://php.net/manual/zh/function.array-replace-recursive.php
  * @param array $array <p>
  * The array in which elements are replaced.
  * </p>
@@ -73,7 +73,7 @@ function array_replace_recursive(
 
 /**
  * Return all the keys or a subset of the keys of an array
- * @link https://php.net/manual/en/function.array-keys.php
+ * @link https://php.net/manual/zh/function.array-keys.php
  * @param array $array <p>
  * An array containing keys to return.
  * </p>
@@ -90,7 +90,7 @@ function array_keys(array $array, mixed $filter_value, bool $strict = false): ar
 
 /**
  * Return all the values of an array
- * @link https://php.net/manual/en/function.array-values.php
+ * @link https://php.net/manual/zh/function.array-values.php
  * @param array $array <p>
  * The array.
  * </p>
@@ -102,7 +102,7 @@ function array_values(array $array): array {}
 
 /**
  * Counts all the values of an array
- * @link https://php.net/manual/en/function.array-count-values.php
+ * @link https://php.net/manual/zh/function.array-count-values.php
  * @param array $array <p>
  * The array of values to count
  * </p>
@@ -126,7 +126,7 @@ function array_column(array $array, string|int|null $column_key, string|int|null
 
 /**
  * Return an array with elements in reverse order
- * @link https://php.net/manual/en/function.array-reverse.php
+ * @link https://php.net/manual/zh/function.array-reverse.php
  * @param array $array <p>
  * The input array.
  * </p>
@@ -141,7 +141,7 @@ function array_reverse(array $array, bool $preserve_keys = false): array {}
 
 /**
  * Iteratively reduce the array to a single value using a callback function
- * @link https://php.net/manual/en/function.array-reduce.php
+ * @link https://php.net/manual/zh/function.array-reduce.php
  * @param array $array <p>
  * The input array.
  * </p>
@@ -173,7 +173,7 @@ function array_reduce(array $array, callable $callback, mixed $initial = null): 
 
 /**
  * Pad array to the specified length with a value
- * @link https://php.net/manual/en/function.array-pad.php
+ * @link https://php.net/manual/zh/function.array-pad.php
  * @param array $array <p>
  * Initial array of values to pad.
  * </p>
@@ -196,7 +196,7 @@ function array_pad(array $array, int $length, mixed $value): array {}
 
 /**
  * Exchanges all keys with their associated values in an array
- * @link https://php.net/manual/en/function.array-flip.php
+ * @link https://php.net/manual/zh/function.array-flip.php
  * @param int[]|string[] $array <p>
  * An array of key/value pairs to be flipped.
  * </p>
@@ -207,7 +207,7 @@ function array_flip(array $array): array {}
 
 /**
  * Changes the case of all keys in an array
- * @link https://php.net/manual/en/function.array-change-key-case.php
+ * @link https://php.net/manual/zh/function.array-change-key-case.php
  * @param array $array <p>
  * The array to work on
  * </p>
@@ -223,7 +223,7 @@ function array_change_key_case(array $array, int $case = CASE_LOWER): array {}
 
 /**
  * Pick one or more random keys out of an array
- * @link https://php.net/manual/en/function.array-rand.php
+ * @link https://php.net/manual/zh/function.array-rand.php
  * @param array $array <p>
  * The input array.
  * </p>
@@ -239,7 +239,7 @@ function array_rand(array $array, int $num = 1): array|string|int {}
 
 /**
  * Removes duplicate values from an array
- * @link https://php.net/manual/en/function.array-unique.php
+ * @link https://php.net/manual/zh/function.array-unique.php
  * @param array $array <p>
  * The input array.
  * </p>
@@ -273,7 +273,7 @@ function array_unique(array $array, int $flags = SORT_STRING): array {}
 
 /**
  * Computes the intersection of arrays
- * @link https://php.net/manual/en/function.array-intersect.php
+ * @link https://php.net/manual/zh/function.array-intersect.php
  * @param array $array <p>
  * The array with main values to check.
  * </p>
@@ -288,7 +288,7 @@ function array_intersect(array $array, #[PhpStormStubsElementAvailable(from: '5.
 
 /**
  * Computes the intersection of arrays using keys for comparison
- * @link https://php.net/manual/en/function.array-intersect-key.php
+ * @link https://php.net/manual/zh/function.array-intersect-key.php
  * @param array $array <p>
  * The array with main keys to check.
  * </p>
@@ -303,7 +303,7 @@ function array_intersect_key(array $array, #[PhpStormStubsElementAvailable(from:
 
 /**
  * Computes the intersection of arrays using a callback function on the keys for comparison
- * @link https://php.net/manual/en/function.array-intersect-ukey.php
+ * @link https://php.net/manual/zh/function.array-intersect-ukey.php
  * @param array $array <p>
  * Initial array for comparison of the arrays.
  * </p>
@@ -328,7 +328,7 @@ function array_intersect_ukey(
 
 /**
  * Computes the intersection of arrays, compares data by a callback function
- * @link https://php.net/manual/en/function.array-uintersect.php
+ * @link https://php.net/manual/zh/function.array-uintersect.php
  * @param array $array <p>
  * The first array.
  * </p>
@@ -358,7 +358,7 @@ function array_uintersect(
 
 /**
  * Computes the intersection of arrays with additional index check
- * @link https://php.net/manual/en/function.array-intersect-assoc.php
+ * @link https://php.net/manual/zh/function.array-intersect-assoc.php
  * @param array $array <p>
  * The array with main values to check.
  * </p>
@@ -372,7 +372,7 @@ function array_intersect_assoc(array $array, #[PhpStormStubsElementAvailable(fro
 
 /**
  * Computes the intersection of arrays with additional index check, compares data by a callback function
- * @link https://php.net/manual/en/function.array-uintersect-assoc.php
+ * @link https://php.net/manual/zh/function.array-uintersect-assoc.php
  * @param array $array <p>
  * The first array.
  * </p>
@@ -400,7 +400,7 @@ function array_uintersect_assoc(
 
 /**
  * Computes the intersection of arrays with additional index check, compares indexes by a callback function
- * @link https://php.net/manual/en/function.array-intersect-uassoc.php
+ * @link https://php.net/manual/zh/function.array-intersect-uassoc.php
  * @param array $array <p>
  * Initial array for comparison of the arrays.
  * </p>
@@ -423,7 +423,7 @@ function array_intersect_uassoc(
 
 /**
  * Computes the intersection of arrays with additional index check, compares data and indexes by separate callback functions
- * @link https://php.net/manual/en/function.array-uintersect-uassoc.php
+ * @link https://php.net/manual/zh/function.array-uintersect-uassoc.php
  * @param array $array <p>
  * The first array.
  * </p>
@@ -456,7 +456,7 @@ function array_uintersect_uassoc(
 
 /**
  * Computes the difference of arrays
- * @link https://php.net/manual/en/function.array-diff.php
+ * @link https://php.net/manual/zh/function.array-diff.php
  * @param array $array <p>
  * The array to compare from
  * </p>
@@ -471,7 +471,7 @@ function array_diff(array $array, #[PhpStormStubsElementAvailable(from: '5.3', t
 
 /**
  * Computes the difference of arrays using keys for comparison
- * @link https://php.net/manual/en/function.array-diff-key.php
+ * @link https://php.net/manual/zh/function.array-diff-key.php
  * @param array $array <p>
  * The array to compare from
  * </p>
@@ -487,7 +487,7 @@ function array_diff_key(array $array, #[PhpStormStubsElementAvailable(from: '5.3
 
 /**
  * Computes the difference of arrays using a callback function on the keys for comparison
- * @link https://php.net/manual/en/function.array-diff-ukey.php
+ * @link https://php.net/manual/zh/function.array-diff-ukey.php
  * @param array $array <p>
  * The array to compare from
  * </p>
@@ -514,7 +514,7 @@ function array_diff_ukey(
 
 /**
  * Computes the difference of arrays by using a callback function for data comparison
- * @link https://php.net/manual/en/function.array-udiff.php
+ * @link https://php.net/manual/zh/function.array-udiff.php
  * @param array $array <p>
  * The first array.
  * </p>
@@ -544,7 +544,7 @@ function array_udiff(
 
 /**
  * Computes the difference of arrays with additional index check
- * @link https://php.net/manual/en/function.array-diff-assoc.php
+ * @link https://php.net/manual/zh/function.array-diff-assoc.php
  * @param array $array <p>
  * The array to compare from
  * </p>
@@ -564,7 +564,7 @@ function array_diff_assoc(
 
 /**
  * Computes the difference of arrays with additional index check, compares data by a callback function
- * @link https://php.net/manual/en/function.array-udiff-assoc.php
+ * @link https://php.net/manual/zh/function.array-udiff-assoc.php
  * @param array $array <p>
  * The first array.
  * </p>
@@ -600,7 +600,7 @@ function array_udiff_assoc(
 
 /**
  * Computes the difference of arrays with additional index check which is performed by a user supplied callback function
- * @link https://php.net/manual/en/function.array-diff-uassoc.php
+ * @link https://php.net/manual/zh/function.array-diff-uassoc.php
  * @param array $array <p>
  * The array to compare from
  * </p>
@@ -627,7 +627,7 @@ function array_diff_uassoc(
 
 /**
  * Computes the difference of arrays with additional index check, compares data and indexes by a callback function
- * @link https://php.net/manual/en/function.array-udiff-uassoc.php
+ * @link https://php.net/manual/zh/function.array-udiff-uassoc.php
  * @param array $array <p>
  * The first array.
  * </p>
@@ -672,7 +672,7 @@ function array_udiff_uassoc(
 
 /**
  * Calculate the sum of values in an array
- * @link https://php.net/manual/en/function.array-sum.php
+ * @link https://php.net/manual/zh/function.array-sum.php
  * @param array $array <p>
  * The input array.
  * </p>
@@ -683,7 +683,7 @@ function array_sum(array $array): int|float {}
 
 /**
  * Calculate the product of values in an array
- * @link https://php.net/manual/en/function.array-product.php
+ * @link https://php.net/manual/zh/function.array-product.php
  * @param array $array <p>
  * The array.
  * </p>
@@ -698,7 +698,7 @@ function array_product(array $array): int|float {}
  * If the <b>callback</b> function returns true, the
  * current value from <b>array</b> is returned into
  * the result array. Array keys are preserved.
- * @link https://php.net/manual/en/function.array-filter.php
+ * @link https://php.net/manual/zh/function.array-filter.php
  * @param array $array <p>
  * The array to iterate over
  * </p>
@@ -730,7 +730,7 @@ function array_filter(array $array, ?callable $callback, int $mode = 0): array {
 
 /**
  * Applies the callback to the elements of the given arrays
- * @link https://php.net/manual/en/function.array-map.php
+ * @link https://php.net/manual/zh/function.array-map.php
  * @param callable|null $callback <p>
  * Callback function to run for each element in each array.
  * </p>
@@ -751,7 +751,7 @@ function array_map(
 
 /**
  * Split an array into chunks
- * @link https://php.net/manual/en/function.array-chunk.php
+ * @link https://php.net/manual/zh/function.array-chunk.php
  * @param array $array <p>
  * The array to work on
  * </p>
@@ -770,7 +770,7 @@ function array_chunk(array $array, int $length, bool $preserve_keys = false): ar
 
 /**
  * Creates an array by using one array for keys and another for its values
- * @link https://php.net/manual/en/function.array-combine.php
+ * @link https://php.net/manual/zh/function.array-combine.php
  * @param array $keys <p>
  * Array of keys to be used. Illegal values for key will be
  * converted to string.
@@ -788,7 +788,7 @@ function array_combine(array $keys, array $values) {}
 
 /**
  * Checks if the given key or index exists in the array
- * @link https://php.net/manual/en/function.array-key-exists.php
+ * @link https://php.net/manual/zh/function.array-key-exists.php
  * @param int|string $key <p>
  * Value to check.
  * </p>
@@ -839,7 +839,7 @@ function array_is_list(array $array): bool {}
 /**
  * Alias:
  * {@see current}
- * @link https://php.net/manual/en/function.pos.php
+ * @link https://php.net/manual/zh/function.pos.php
  * @param array|ArrayAccess $array
  * @return mixed
  */
@@ -849,7 +849,7 @@ function pos(object|array $array): mixed {}
 /**
  * Alias:
  * {@see \count}
- * @link https://php.net/manual/en/function.sizeof.php
+ * @link https://php.net/manual/zh/function.sizeof.php
  * @param array|Countable $value
  * @param int $mode [optional]
  * @return int<0, max>
@@ -859,7 +859,7 @@ function sizeof(Countable|array $value, int $mode = COUNT_NORMAL): int {}
 
 /**
  * Checks if the given key or index exists in the array. The name of this function is array_key_exists() in PHP > 4.0.6.
- * @link https://php.net/manual/en/function.array-key-exists.php
+ * @link https://php.net/manual/zh/function.array-key-exists.php
  * @param int|string $key <p>
  * Value to check.
  * </p>
@@ -873,7 +873,7 @@ function key_exists($key, array $array): bool {}
 
 /**
  * Checks if assertion is <b>FALSE</b>
- * @link https://php.net/manual/en/function.assert.php
+ * @link https://php.net/manual/zh/function.assert.php
  * @param Throwable|string|null $assertion <p>
  * The assertion.
  * In PHP 5, this must be either a string to be evaluated or a boolean to be tested.
@@ -892,14 +892,14 @@ function assert(
 
 /**
  * AssertionError is thrown when an assertion made via {@see assert()} fails.
- * @link https://php.net/manual/en/class.assertionerror.php
+ * @link https://php.net/manual/zh/class.assertionerror.php
  * @since 7.0
  */
 class AssertionError extends Error {}
 
 /**
  * Set/get the various assert flags
- * @link https://php.net/manual/en/function.assert-options.php
+ * @link https://php.net/manual/zh/function.assert-options.php
  * @param int $option <p>
  * <table>
  * Assert Options
@@ -954,7 +954,7 @@ function assert_options(int $option, mixed $value): mixed {}
 
 /**
  * Compares two "PHP-standardized" version number strings
- * @link https://php.net/manual/en/function.version-compare.php
+ * @link https://php.net/manual/zh/function.version-compare.php
  * @param string $version1 <p>
  * First version number.
  * </p>
@@ -1010,7 +1010,7 @@ function version_compare(
 
 /**
  * Convert a pathname and a project identifier to a System V IPC key
- * @link https://php.net/manual/en/function.ftok.php
+ * @link https://php.net/manual/zh/function.ftok.php
  * @param string $filename <p>
  * Path to an accessible file.
  * </p>
@@ -1025,7 +1025,7 @@ function ftok(string $filename, string $project_id): int {}
 
 /**
  * Perform the rot13 transform on a string
- * @link https://php.net/manual/en/function.str-rot13.php
+ * @link https://php.net/manual/zh/function.str-rot13.php
  * @param string $string <p>
  * The input string.
  * </p>
@@ -1036,7 +1036,7 @@ function str_rot13(string $string): string {}
 
 /**
  * Retrieve list of registered filters
- * @link https://php.net/manual/en/function.stream-get-filters.php
+ * @link https://php.net/manual/zh/function.stream-get-filters.php
  * @return list<string> an indexed array containing the name of all stream filters
  * available.
  */
@@ -1045,7 +1045,7 @@ function stream_get_filters(): array {}
 
 /**
  * Check if a stream is a TTY
- * @link https://php.net/manual/en/function.stream-isatty.php
+ * @link https://php.net/manual/zh/function.stream-isatty.php
  * @param resource $stream
  * @return bool
  * @since 7.2
@@ -1055,7 +1055,7 @@ function stream_isatty($stream): bool {}
 
 /**
  * Register a user defined stream filter
- * @link https://php.net/manual/en/function.stream-filter-register.php
+ * @link https://php.net/manual/zh/function.stream-filter-register.php
  * @param string $filter_name <p>
  * The filter name to be registered.
  * </p>
@@ -1171,7 +1171,7 @@ function stream_filter_register(string $filter_name, string $class): bool {}
 
 /**
  * Return a bucket object from the brigade for operating on
- * @link https://php.net/manual/en/function.stream-bucket-make-writeable.php
+ * @link https://php.net/manual/zh/function.stream-bucket-make-writeable.php
  * @param resource $brigade
  * @return object|null
  */
@@ -1179,7 +1179,7 @@ function stream_bucket_make_writeable($brigade): ?object {}
 
 /**
  * Prepend bucket to brigade
- * @link https://php.net/manual/en/function.stream-bucket-prepend.php
+ * @link https://php.net/manual/zh/function.stream-bucket-prepend.php
  * @param resource $brigade
  * @param object $bucket
  * @return void
@@ -1188,7 +1188,7 @@ function stream_bucket_prepend($brigade, object $bucket): void {}
 
 /**
  * Append bucket to brigade
- * @link https://php.net/manual/en/function.stream-bucket-append.php
+ * @link https://php.net/manual/zh/function.stream-bucket-append.php
  * @param resource $brigade
  * @param object $bucket
  * @return void
@@ -1197,7 +1197,7 @@ function stream_bucket_append($brigade, object $bucket): void {}
 
 /**
  * Create a new bucket for use on the current stream
- * @link https://php.net/manual/en/function.stream-bucket-new.php
+ * @link https://php.net/manual/zh/function.stream-bucket-new.php
  * @param resource $stream
  * @param string $buffer
  * @return object
@@ -1206,7 +1206,7 @@ function stream_bucket_new($stream, string $buffer): object {}
 
 /**
  * Add URL rewriter values
- * @link https://php.net/manual/en/function.output-add-rewrite-var.php
+ * @link https://php.net/manual/zh/function.output-add-rewrite-var.php
  * @param string $name <p>
  * The variable name.
  * </p>
@@ -1243,14 +1243,14 @@ function output_add_rewrite_var(string $name, string $value): bool {}
  *
  * </table>
  *
- * @link https://php.net/manual/en/function.output-reset-rewrite-vars.php
+ * @link https://php.net/manual/zh/function.output-reset-rewrite-vars.php
  * @return bool true on success or false on failure.
  */
 function output_reset_rewrite_vars(): bool {}
 
 /**
  * Returns directory path used for temporary files
- * @link https://php.net/manual/en/function.sys-get-temp-dir.php
+ * @link https://php.net/manual/zh/function.sys-get-temp-dir.php
  * @return string the path of the temporary directory.
  * @since 5.2.1
  */
@@ -1258,7 +1258,7 @@ function sys_get_temp_dir(): string {}
 
 /**
  * Get the contents of the realpath cache.
- * @link https://php.net/manual/en/function.realpath-cache-get.php
+ * @link https://php.net/manual/zh/function.realpath-cache-get.php
  * @return array Returns an array of realpath cache entries. The keys are
  * original path entries, and the values are arrays of data items,
  * containing the resolved path, expiration date, and other options kept in
@@ -1270,7 +1270,7 @@ function realpath_cache_get(): array {}
 
 /**
  * Get the amount of memory used by the realpath cache.
- * @link https://php.net/manual/en/function.realpath-cache-size.php
+ * @link https://php.net/manual/zh/function.realpath-cache-size.php
  * @return int Returns how much memory realpath cache is using.
  * @since 5.3.2
  */

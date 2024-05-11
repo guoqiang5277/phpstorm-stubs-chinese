@@ -5,7 +5,7 @@ namespace MongoDB\Driver\Exception;
 /**
  * Thrown when a command fails
  *
- * @link https://php.net/manual/en/class.mongodb-driver-exception-commandexception.php
+ * @link https://php.net/manual/zh/class.mongodb-driver-exception-commandexception.php
  * @since 1.5.0
  */
 class CommandException extends ServerException

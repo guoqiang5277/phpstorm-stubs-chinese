@@ -4,7 +4,7 @@ namespace MongoDB\Driver\Exception;
 
 /**
  * Thrown when the driver encounters a runtime error (e.g. internal error from » libmongoc).
- * @link https://php.net/manual/en/class.mongodb-driver-exception-runtimeexception.php
+ * @link https://php.net/manual/zh/class.mongodb-driver-exception-runtimeexception.php
  * @since 1.0.0
  */
 class RuntimeException extends \RuntimeException implements Exception

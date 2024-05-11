@@ -3,7 +3,7 @@
 use JetBrains\PhpStorm\Pure;
 
 /**
- * @link https://php.net/manual/en/class.reflectionenumunitcase.php
+ * @link https://php.net/manual/zh/class.reflectionenumunitcase.php
  * @since 8.1
  */
 class ReflectionEnumUnitCase extends ReflectionClassConstant

@@ -3,7 +3,7 @@
 use JetBrains\PhpStorm\Pure;
 
 /**
- * @link https://php.net/manual/en/class.reflectionenumbackedcase.php
+ * @link https://php.net/manual/zh/class.reflectionenumbackedcase.php
  * @since 8.1
  */
 class ReflectionEnumBackedCase extends ReflectionEnumUnitCase

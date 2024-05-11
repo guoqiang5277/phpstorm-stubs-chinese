@@ -8,7 +8,7 @@ use MongoDB\Driver\Exception\UnexpectedValueException;
 
 /**
  * Class MaxKey
- * @link https://php.net/manual/en/class.mongodb-bson-maxkey.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-maxkey.php
  */
 final class MaxKey implements Type, MaxKeyInterface, \Serializable, JsonSerializable
 {

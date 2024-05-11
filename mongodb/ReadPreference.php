@@ -9,7 +9,7 @@ use stdClass;
 
 /**
  * Class ReadPreference
- * @link https://php.net/manual/en/class.mongodb-driver-readpreference.php
+ * @link https://php.net/manual/zh/class.mongodb-driver-readpreference.php
  */
 final class ReadPreference implements Serializable, \Serializable
 {
@@ -56,7 +56,7 @@ final class ReadPreference implements Serializable, \Serializable
 
     /**
      * Construct immutable ReadPreference
-     * @link https://php.net/manual/en/mongodb-driver-readpreference.construct.php
+     * @link https://php.net/manual/zh/mongodb-driver-readpreference.construct.php
      * @param string|int $mode
      * @param array|null $tagSets
      * @param array|null $options
@@ -75,21 +75,21 @@ final class ReadPreference implements Serializable, \Serializable
 
     /**
      * Returns the ReadPreference's "mode" option
-     * @link https://php.net/manual/en/mongodb-driver-readpreference.getmode.php
+     * @link https://php.net/manual/zh/mongodb-driver-readpreference.getmode.php
      */
     final public function getMode(): int {}
 
     /**
      * Returns the ReadPreference's "mode" option as a string
      * @since 1.7.0
-     * @link https://php.net/manual/en/mongodb-driver-readpreference.getmodestring.php
+     * @link https://php.net/manual/zh/mongodb-driver-readpreference.getmodestring.php
      * @throws InvalidArgumentException
      */
     final public function getModeString(): string {}
 
     /**
      * Returns the ReadPreference's "tagSets" option
-     * @link https://php.net/manual/en/mongodb-driver-readpreference.gettagsets.php
+     * @link https://php.net/manual/zh/mongodb-driver-readpreference.gettagsets.php
      */
     final public function getTagSets(): array {}
 
@@ -105,7 +105,7 @@ final class ReadPreference implements Serializable, \Serializable
     /**
      * Serialize a ReadPreference
      * @since 1.7.0
-     * @link https://php.net/manual/en/mongodb-driver-readpreference.serialize.php
+     * @link https://php.net/manual/zh/mongodb-driver-readpreference.serialize.php
      * @throws InvalidArgumentException
      */
     final public function serialize(): string {}
@@ -113,7 +113,7 @@ final class ReadPreference implements Serializable, \Serializable
     /**
      * Unserialize a ReadPreference
      * @since 1.7.0
-     * @link https://php.net/manual/en/mongodb-driver-readpreference.unserialize.php
+     * @link https://php.net/manual/zh/mongodb-driver-readpreference.unserialize.php
      * @throws InvalidArgumentException on argument parsing errors or if the properties are invalid
      * @throws UnexpectedValueException if the properties cannot be unserialized (i.e. serialized was malformed)
      */

@@ -16,7 +16,7 @@ abstract class ReflectionType implements Stringable
     /**
      * Checks if null is allowed
      *
-     * @link https://php.net/manual/en/reflectiontype.allowsnull.php
+     * @link https://php.net/manual/zh/reflectiontype.allowsnull.php
      * @return bool Returns {@see true} if {@see null} is allowed, otherwise {@see false}
      * @since 7.0
      */
@@ -26,7 +26,7 @@ abstract class ReflectionType implements Stringable
     /**
      * Checks if it is a built-in type
      *
-     * @link https://php.net/manual/en/reflectionnamedtype.isbuiltin.php
+     * @link https://php.net/manual/zh/reflectionnamedtype.isbuiltin.php
      * @return bool Returns {@see true} if it's a built-in type, otherwise {@see false}
      * @since 7.0
      * @removed 8.0 this method has been removed from the {@see ReflectionType}
@@ -38,7 +38,7 @@ abstract class ReflectionType implements Stringable
     /**
      * To string
      *
-     * @link https://php.net/manual/en/reflectiontype.tostring.php
+     * @link https://php.net/manual/zh/reflectiontype.tostring.php
      * @return string Returns the type of the parameter.
      * @since 7.0
      * @see ReflectionNamedType::getName()

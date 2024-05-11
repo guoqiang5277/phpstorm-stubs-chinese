@@ -19,7 +19,7 @@ final class WriteConcern implements Serializable, \Serializable
 
     /**
      * Construct immutable WriteConcern
-     * @link https://php.net/manual/en/mongodb-driver-writeconcern.construct.php
+     * @link https://php.net/manual/zh/mongodb-driver-writeconcern.construct.php
      * @param string|int $w
      * @param int|null $wtimeout How long to wait (in milliseconds) for secondaries before failing.
      * @param bool|null $journal Wait until mongod has applied the write to the journal.
@@ -31,19 +31,19 @@ final class WriteConcern implements Serializable, \Serializable
 
     /**
      * Returns the WriteConcern's "journal" option
-     * @link https://php.net/manual/en/mongodb-driver-writeconcern.getjournal.php
+     * @link https://php.net/manual/zh/mongodb-driver-writeconcern.getjournal.php
      */
     final public function getJournal(): ?bool {}
 
     /**
      * Returns the WriteConcern's "w" option
-     * @link https://php.net/manual/en/mongodb-driver-writeconcern.getw.php
+     * @link https://php.net/manual/zh/mongodb-driver-writeconcern.getw.php
      */
     final public function getW(): string|int|null {}
 
     /**
      * Returns the WriteConcern's "wtimeout" option
-     * @link https://php.net/manual/en/mongodb-driver-writeconcern.getwtimeout.php
+     * @link https://php.net/manual/zh/mongodb-driver-writeconcern.getwtimeout.php
      */
     final public function getWtimeout(): int {}
 
@@ -59,7 +59,7 @@ final class WriteConcern implements Serializable, \Serializable
     /**
      * Serialize a WriteConcern
      * @since 1.7.0
-     * @link https://php.net/manual/en/mongodb-driver-writeconcern.serialize.php
+     * @link https://php.net/manual/zh/mongodb-driver-writeconcern.serialize.php
      * @throws InvalidArgumentException
      */
     final public function serialize(): string {}
@@ -67,7 +67,7 @@ final class WriteConcern implements Serializable, \Serializable
     /**
      * Unserialize a WriteConcern
      * @since 1.7.0
-     * @link https://php.net/manual/en/mongodb-driver-writeconcern.unserialize.php
+     * @link https://php.net/manual/zh/mongodb-driver-writeconcern.unserialize.php
      * @throws InvalidArgumentException on argument parsing errors or if the properties are invalid
      * @throws UnexpectedValueException if the properties cannot be unserialized (i.e. serialized was malformed)
      */

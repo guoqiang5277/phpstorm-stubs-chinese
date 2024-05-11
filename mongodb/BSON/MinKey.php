@@ -8,7 +8,7 @@ use MongoDB\Driver\Exception\UnexpectedValueException;
 
 /**
  * Class MinKey
- * @link https://php.net/manual/en/class.mongodb-bson-minkey.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-minkey.php
  */
 final class MinKey implements Type, MinKeyInterface, \Serializable, JsonSerializable
 {

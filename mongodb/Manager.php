@@ -16,13 +16,13 @@ use MongoDB\Driver\Monitoring\Subscriber;
  * The MongoDB\Driver\Manager is the main entry point to the extension. It is responsible for maintaining connections to MongoDB (be it standalone server, replica set, or sharded cluster).
  * No connection to MongoDB is made upon instantiating the Manager. This means the MongoDB\Driver\Manager can always be constructed, even though one or more MongoDB servers are down.
  * Any write or query can throw connection exceptions as connections are created lazily. A MongoDB server may also become unavailable during the life time of the script. It is therefore important that all actions on the Manager to be wrapped in try/catch statements.
- * @link https://php.net/manual/en/class.mongodb-driver-manager.php
+ * @link https://php.net/manual/zh/class.mongodb-driver-manager.php
  */
 final class Manager
 {
     /**
      * Manager constructor.
-     * @link https://php.net/manual/en/mongodb-driver-manager.construct.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.construct.php
      * @param string|null $uri A mongodb:// connection URI
      * @param array|null $options Connection string options
      * @param array|null $driverOptions Any driver-specific options not included in MongoDB connection spec.
@@ -35,7 +35,7 @@ final class Manager
 
     /**
      * Return a ClientEncryption instance.
-     * @link https://php.net/manual/en/mongodb-driver-manager.createclientencryption.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.createclientencryption.php
      * @param array $options
      * @return \MongoDB\Driver\ClientEncryption
      * @throws \MongoDB\Driver\Exception\InvalidArgumentException On argument parsing errors.
@@ -45,7 +45,7 @@ final class Manager
 
     /**
      * Execute one or more write operations
-     * @link https://php.net/manual/en/mongodb-driver-manager.executebulkwrite.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.executebulkwrite.php
      * @param string $namespace A fully qualified namespace (databaseName.collectionName)
      * @param BulkWrite $bulk The MongoDB\Driver\BulkWrite to execute.
      * @param array|WriteConcern|null $options WriteConcern type for backwards compatibility
@@ -59,7 +59,7 @@ final class Manager
     final public function executeBulkWrite(string $namespace, BulkWrite $bulk, array|WriteConcern|null $options = null): WriteResult {}
 
     /**
-     * @link https://php.net/manual/en/mongodb-driver-manager.executecommand.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.executecommand.php
      * @param string $db The name of the database on which to execute the command.
      * @param Command $command The command document.
      * @param array|ReadPreference|null $options ReadPreference type for backwards compatibility
@@ -75,7 +75,7 @@ final class Manager
 
     /**
      * Execute a MongoDB query
-     * @link https://php.net/manual/en/mongodb-driver-manager.executequery.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.executequery.php
      * @param string $namespace A fully qualified namespace (databaseName.collectionName)
      * @param Query $query A MongoDB\Driver\Query to execute.
      * @param array|ReadPreference|null $options ReadPreference type for backwards compatibility
@@ -88,7 +88,7 @@ final class Manager
     final public function executeQuery(string $namespace, Query $query, array|ReadPreference|null $options = null): Cursor {}
 
     /**
-     * @link https://php.net/manual/en/mongodb-driver-manager.executereadcommand.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.executereadcommand.php
      * @param string $db The name of the database on which to execute the command that reads.
      * @param Command $command The command document.
      * @param array|null $options
@@ -103,7 +103,7 @@ final class Manager
     final public function executeReadCommand(string $db, Command $command, ?array $options = null): Cursor {}
 
     /**
-     * @link https://php.net/manual/en/mongodb-driver-manager.executereadwritecommand.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.executereadwritecommand.php
      * @param string $db The name of the database on which to execute the command that reads.
      * @param Command $command The command document.
      * @param array|null $options
@@ -118,7 +118,7 @@ final class Manager
     final public function executeReadWriteCommand(string $db, Command $command, ?array $options = null): Cursor {}
 
     /**
-     * @link https://php.net/manual/en/mongodb-driver-manager.executewritecommand.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.executewritecommand.php
      * @param string $db The name of the database on which to execute the command that writes.
      * @param Command $command The command document.
      * @param array|null $options
@@ -141,14 +141,14 @@ final class Manager
 
     /**
      * Return the ReadConcern for the Manager
-     * @link https://php.net/manual/en/mongodb-driver-manager.getreadconcern.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.getreadconcern.php
      * @throws InvalidArgumentException on argument parsing errors.
      */
     final public function getReadConcern(): ReadConcern {}
 
     /**
      * Return the ReadPreference for the Manager
-     * @link https://php.net/manual/en/mongodb-driver-manager.getreadpreference.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.getreadpreference.php
      * @throws InvalidArgumentException
      * @return ReadPreference
      */
@@ -156,7 +156,7 @@ final class Manager
 
     /**
      * Return the servers to which this manager is connected
-     * @link https://php.net/manual/en/mongodb-driver-manager.getservers.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.getservers.php
      * @throws InvalidArgumentException on argument parsing errors
      * @return Server[]
      */
@@ -164,7 +164,7 @@ final class Manager
 
     /**
      * Return the WriteConcern for the Manager
-     * @link https://php.net/manual/en/mongodb-driver-manager.getwriteconcern.php
+     * @link https://php.net/manual/zh/mongodb-driver-manager.getwriteconcern.php
      * @throws InvalidArgumentException on argument parsing errors.
      * @return WriteConcern
      */

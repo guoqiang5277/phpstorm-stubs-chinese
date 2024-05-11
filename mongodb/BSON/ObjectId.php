@@ -7,13 +7,13 @@ use MongoDB\Driver\Exception\InvalidArgumentException;
 
 /**
  * Class ObjectId
- * @link https://php.net/manual/en/class.mongodb-bson-objectid.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-objectid.php
  */
 final class ObjectId implements Type, ObjectIdInterface, \Serializable, JsonSerializable
 {
     /**
      * Construct a new ObjectId
-     * @link https://php.net/manual/en/mongodb-bson-objectid.construct.php
+     * @link https://php.net/manual/zh/mongodb-bson-objectid.construct.php
      * @param string|null $id A 24-character hexadecimal string. If not provided, the driver will generate an ObjectId.
      * @throws InvalidArgumentException if id is not a 24-character hexadecimal string.
      */
@@ -21,7 +21,7 @@ final class ObjectId implements Type, ObjectIdInterface, \Serializable, JsonSeri
 
     /**
      * Returns the hexadecimal representation of this ObjectId
-     * @link https://php.net/manual/en/mongodb-bson-objectid.tostring.php
+     * @link https://php.net/manual/zh/mongodb-bson-objectid.tostring.php
      */
     final public function __toString(): string {}
 

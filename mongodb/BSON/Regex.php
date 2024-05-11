@@ -8,31 +8,31 @@ use MongoDB\Driver\Exception\UnexpectedValueException;
 
 /**
  * Class Regex
- * @link https://php.net/manual/en/class.mongodb-bson-regex.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-regex.php
  */
 final class Regex implements Type, RegexInterface, \Serializable, JsonSerializable
 {
     /**
      * Construct a new Regex
-     * @link https://php.net/manual/en/mongodb-bson-regex.construct.php
+     * @link https://php.net/manual/zh/mongodb-bson-regex.construct.php
      */
     final public function __construct(string $pattern, string $flags = '') {}
 
     /**
      * Returns the Regex's flags
-     * @link https://php.net/manual/en/mongodb-bson-regex.getflags.php
+     * @link https://php.net/manual/zh/mongodb-bson-regex.getflags.php
      */
     final public function getFlags(): string {}
 
     /**
      * Returns the Regex's pattern
-     * @link https://php.net/manual/en/mongodb-bson-regex.getpattern.php
+     * @link https://php.net/manual/zh/mongodb-bson-regex.getpattern.php
      */
     final public function getPattern(): string {}
 
     /**
      * Returns the string representation of this Regex
-     * @link https://php.net/manual/en/mongodb-bson-regex.tostring.php
+     * @link https://php.net/manual/zh/mongodb-bson-regex.tostring.php
      */
     final public function __toString(): string {}
 

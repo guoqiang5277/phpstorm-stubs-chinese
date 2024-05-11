@@ -8,13 +8,13 @@ use MongoDB\Driver\Exception\UnexpectedValueException;
 
 /**
  * Represents a BSON date.
- * @link https://php.net/manual/en/class.mongodb-bson-utcdatetime.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-utcdatetime.php
  */
 final class UTCDateTime implements Type, UTCDateTimeInterface, \Serializable, \JsonSerializable
 {
     /**
      * Construct a new UTCDateTime
-     * @link https://php.net/manual/en/mongodb-bson-utcdatetime.construct.php
+     * @link https://php.net/manual/zh/mongodb-bson-utcdatetime.construct.php
      */
     final public function __construct(int|string|float|DateTimeInterface|null $milliseconds = null) {}
 
@@ -22,13 +22,13 @@ final class UTCDateTime implements Type, UTCDateTimeInterface, \Serializable, \J
 
     /**
      * Returns the DateTime representation of this UTCDateTime
-     * @link https://php.net/manual/en/mongodb-bson-utcdatetime.todatetime.php
+     * @link https://php.net/manual/zh/mongodb-bson-utcdatetime.todatetime.php
      */
     final public function toDateTime(): \DateTime {}
 
     /**
      * Returns the string representation of this UTCDateTime
-     * @link https://php.net/manual/en/mongodb-bson-utcdatetime.tostring.php
+     * @link https://php.net/manual/zh/mongodb-bson-utcdatetime.tostring.php
      */
     final public function __toString(): string {}
 

@@ -5,7 +5,7 @@ use JetBrains\PhpStorm\ArrayShape;
 
 /**
  * Reads a line
- * @link https://php.net/manual/en/function.readline.php
+ * @link https://php.net/manual/zh/function.readline.php
  * @param string|null $prompt [optional] <p>
  * You may specify a string with which to prompt the user.
  * </p>
@@ -16,7 +16,7 @@ function readline(?string $prompt): string|false {}
 
 /**
  * Gets/sets various internal readline variables
- * @link https://php.net/manual/en/function.readline-info.php
+ * @link https://php.net/manual/zh/function.readline-info.php
  * @param string|null $var_name [optional] <p>
  * A variable name.
  * </p>
@@ -52,7 +52,7 @@ function readline_info(?string $var_name, $value): mixed {}
 
 /**
  * Adds a line to the history
- * @link https://php.net/manual/en/function.readline-add-history.php
+ * @link https://php.net/manual/zh/function.readline-add-history.php
  * @param string $prompt <p>
  * The line to be added in the history.
  * </p>
@@ -62,14 +62,14 @@ function readline_add_history(string $prompt): bool {}
 
 /**
  * Clears the history
- * @link https://php.net/manual/en/function.readline-clear-history.php
+ * @link https://php.net/manual/zh/function.readline-clear-history.php
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  */
 function readline_clear_history(): bool {}
 
 /**
  * Lists the history
- * @link https://php.net/manual/en/function.readline-list-history.php
+ * @link https://php.net/manual/zh/function.readline-list-history.php
  * @return array an array of the entire command line history. The elements are
  * indexed by integers starting at zero.
  */
@@ -77,7 +77,7 @@ function readline_list_history(): array {}
 
 /**
  * Reads the history
- * @link https://php.net/manual/en/function.readline-read-history.php
+ * @link https://php.net/manual/zh/function.readline-read-history.php
  * @param string|null $filename [optional] <p>
  * Path to the filename containing the command history.
  * </p>
@@ -87,7 +87,7 @@ function readline_read_history(?string $filename): bool {}
 
 /**
  * Writes the history
- * @link https://php.net/manual/en/function.readline-write-history.php
+ * @link https://php.net/manual/zh/function.readline-write-history.php
  * @param string|null $filename [optional] <p>
  * Path to the saved file.
  * </p>
@@ -97,7 +97,7 @@ function readline_write_history(?string $filename): bool {}
 
 /**
  * Registers a completion function
- * @link https://php.net/manual/en/function.readline-completion-function.php
+ * @link https://php.net/manual/zh/function.readline-completion-function.php
  * @param callable $callback <p>
  * You must supply the name of an existing function which accepts a
  * partial command line and returns an array of possible matches.
@@ -108,7 +108,7 @@ function readline_completion_function(callable $callback): bool {}
 
 /**
  * Initializes the readline callback interface and terminal, prints the prompt and returns immediately
- * @link https://php.net/manual/en/function.readline-callback-handler-install.php
+ * @link https://php.net/manual/zh/function.readline-callback-handler-install.php
  * @param string $prompt <p>
  * The prompt message.
  * </p>
@@ -122,14 +122,14 @@ function readline_callback_handler_install(string $prompt, callable $callback): 
 
 /**
  * Reads a character and informs the readline callback interface when a line is received
- * @link https://php.net/manual/en/function.readline-callback-read-char.php
+ * @link https://php.net/manual/zh/function.readline-callback-read-char.php
  * @return void No value is returned.
  */
 function readline_callback_read_char(): void {}
 
 /**
  * Removes a previously installed callback handler and restores terminal settings
- * @link https://php.net/manual/en/function.readline-callback-handler-remove.php
+ * @link https://php.net/manual/zh/function.readline-callback-handler-remove.php
  * @return bool <b>TRUE</b> if a previously installed callback handler was removed, or
  * <b>FALSE</b> if one could not be found.
  */
@@ -137,14 +137,14 @@ function readline_callback_handler_remove(): bool {}
 
 /**
  * Redraws the display
- * @link https://php.net/manual/en/function.readline-redisplay.php
+ * @link https://php.net/manual/zh/function.readline-redisplay.php
  * @return void No value is returned.
  */
 function readline_redisplay(): void {}
 
 /**
  * Inform readline that the cursor has moved to a new line
- * @link https://php.net/manual/en/function.readline-on-new-line.php
+ * @link https://php.net/manual/zh/function.readline-on-new-line.php
  * @return void No value is returned.
  */
 function readline_on_new_line(): void {}

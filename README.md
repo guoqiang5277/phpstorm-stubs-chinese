@@ -8,6 +8,13 @@
 [![PhpStorm Stubs PECL Test](https://github.com/JetBrains/phpstorm-stubs/actions/workflows/testPeclExtensions.yml/badge.svg)](https://github.com/JetBrains/phpstorm-stubs/actions/workflows/testPeclExtensions.yml)
 [![PhpStorm Stubs Check Links](https://github.com/JetBrains/phpstorm-stubs/actions/workflows/testLinks.yml/badge.svg)](https://github.com/JetBrains/phpstorm-stubs/actions/workflows/testLinks.yml)
 
+本仓库是 JetBrains 官方提供的 PHPStorm 官方 stubs 仓库。
+基于 v2024.1.1 版本。
+
+暂时做以下修改：
+1. 替换所有英文链接为中文链接
+
+
 STUBS are normal, syntactically correct PHP files that contain function & class signatures, constant definitions, etc. for all built-in PHP stuff and most standard extensions. Stubs need to include complete [PHPDOC], especially proper @return annotations.
 
 An IDE needs them for completion, code inspection, type inference, doc popups, etc. Quality of most of these services depend on the quality of the stubs (basically their PHPDOC @annotations).

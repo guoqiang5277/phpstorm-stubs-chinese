@@ -8,19 +8,19 @@ use MongoDB\Driver\Exception\UnexpectedValueException;
 
 /**
  * Represents a BSON timestamp, which is an internal MongoDB type not intended for general date storage.
- * @link https://php.net/manual/en/class.mongodb-bson-timestamp.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-timestamp.php
  */
 final class Timestamp implements TimestampInterface, Type, \Serializable, JsonSerializable
 {
     /**
      * Construct a new Timestamp
-     * @link https://php.net/manual/en/mongodb-bson-timestamp.construct.php
+     * @link https://php.net/manual/zh/mongodb-bson-timestamp.construct.php
      */
     final public function __construct(int $increment, int $timestamp) {}
 
     /**
      * Returns the string representation of this Timestamp
-     * @link https://php.net/manual/en/mongodb-bson-timestamp.tostring.php
+     * @link https://php.net/manual/zh/mongodb-bson-timestamp.tostring.php
      */
     final public function __toString(): string {}
 

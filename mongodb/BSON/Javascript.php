@@ -8,13 +8,13 @@ use MongoDB\Driver\Exception\UnexpectedValueException;
 
 /**
  * Class Javascript
- * @link https://php.net/manual/en/class.mongodb-bson-javascript.php
+ * @link https://php.net/manual/zh/class.mongodb-bson-javascript.php
  */
 final class Javascript implements Type, JavascriptInterface, \Serializable, JsonSerializable
 {
     /**
      * Construct a new Javascript
-     * @link https://php.net/manual/en/mongodb-bson-javascript.construct.php
+     * @link https://php.net/manual/zh/mongodb-bson-javascript.construct.php
      */
     final public function __construct(string $javascript, array|object|null $scope = null) {}
 
